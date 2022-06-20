@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment</title>
+    <style>
+        .breadcrumb{
+            padding: 1rem;
+            background-color: lightgrey;
+            list-style-type: none;
+        }
+
+        .breadcrumb li{
+            display: inline-block;
+        }
+
+        .breadcrumb li a{
+            color: brown;
+        }
+
+        li:not(:first-child)::before{
+            content: "/";
+            color: black;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <ul class="breadcrumb">  
+        <li><a href="#">Home</a></li>  
+        <li><a href="#">Users</a></li>  
+        <li><a href="#">Cloud Lim</a></li>  
+        <li>Info</li>
+      </ul>
+</body>
+</html>
